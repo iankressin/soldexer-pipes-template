@@ -1,0 +1,5 @@
+{
+  "name": "swaps",
+  "version": "0.0.1",
+  "description": "Indexer for Solana swaps. Supports Orca and Raydium"
+}
