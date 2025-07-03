@@ -1,5 +1,41 @@
 {
   "name": "swaps",
   "version": "0.0.1",
-  "description": "Indexer for Solana swaps. Supports Orca and Raydium"
+  "description": "Indexer for Solana swaps. Supports Orca and Raydium",
+  "envSchema": {
+    "PORTAL_URL": {
+      "description": "The URL of the portal to index",
+      "required": true,
+      "default": "https://portal.sqd.dev"
+    },
+    "FROM_BLOCK": {
+      "description": "The block number to start indexing from",
+      "required": true,
+      "default": 346071611
+    },
+    "TO_BLOCK": {
+      "description": "The block number to stop indexing at",
+      "required": false
+    },
+    "CLICKHOUSE_URL": {
+      "description": "The URL of the Clickhouse database",
+      "required": true,
+      "default": "http://host.docker.internal:8123"
+    },
+    "CLICKHOUSE_DATABASE": {
+      "description": "The name of the Clickhouse database",
+      "required": true,
+      "default": "default"
+    },
+    "CLICKHOUSE_USERNAME": {
+      "description": "The username for the Clickhouse database",
+      "required": true,
+      "default": "default"
+    },
+    "CLICKHOUSE_PASSWORD": {
+      "description": "The password for the Clickhouse database",
+      "required": true,
+      "default": "password"
+    }
+  }
 }
